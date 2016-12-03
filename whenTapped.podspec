@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
   spec.authors = { "Vincent Narbot" => 'vincent@innovatice.tech' }
   spec.social_media_url = "http://twitter.com/vincentnarbot"
 
-  spec.platform = :ios, "10.1"
+  spec.platform = :ios, "9.0"
   spec.requires_arc = true
   spec.source = { git: "https://github.com/VincentNarbot/whenTapped.git", tag: "v#{spec.version}", submodules: true }
   spec.source_files = "whenTapped/**/*.{h,swift}"
