@@ -8,6 +8,9 @@ pod 'whenTapped', :git => 'https://github.com/VincentNarbot/whenTapped.git'
 ```
 
 ###  Use
+```swift
+import whenTapped
+```
 
 ```swift
 //UIButton
