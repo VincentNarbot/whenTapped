@@ -6,6 +6,8 @@
 //  Copyright © 2016 Vincent Narbot. All rights reserved.
 //
 
+import UIKit
+
 extension UIImageView {
     private struct AssociatedKeys {
         static var whenTappedKey   = "whenTappedKey"

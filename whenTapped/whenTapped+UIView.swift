@@ -6,12 +6,14 @@
 //  Copyright © 2017 Vincent Narbot. All rights reserved.
 //
 
+import UIKit
+
 extension UIView {
     private struct AssociatedKeys {
         static var whenTappedKey   = "whenTappedKey"
     }
     
-    public override func whenTapped(handler: (() -> Void)!) {
+    public func whenTapped(handler: (() -> Void)!) {
         let aBlockClassWrapper = ClosureWrapper(closure: handler)
         objc_setAssociatedObject(self, &AssociatedKeys.whenTappedKey, aBlockClassWrapper, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC);
         
@@ -20,7 +22,7 @@ extension UIView {
         self.addGestureRecognizer(tapGestureRecognizer)
     }
     
-    override func touchUpInside(){
+    func touchUpInside(){
         let actionBlockAnyObject = objc_getAssociatedObject(self, &AssociatedKeys.whenTappedKey) as? ClosureWrapper
         actionBlockAnyObject?.closure?()
         self.tag = 0
