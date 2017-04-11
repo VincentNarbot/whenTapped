@@ -15,7 +15,7 @@ extension UIImageView {
         let aBlockClassWrapper = ClosureWrapper(closure: handler)
         objc_setAssociatedObject(self, &AssociatedKeys.whenTappedKey, aBlockClassWrapper, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC);
         
-        let tapGestureRecognizer = UITapGestureRecognizer(target:self, action:#selector(UIButton.touchUpInside))
+        let tapGestureRecognizer = UITapGestureRecognizer(target:self, action:#selector(UIImageView.touchUpInside))
         self.isUserInteractionEnabled = true
         self.addGestureRecognizer(tapGestureRecognizer)
     }

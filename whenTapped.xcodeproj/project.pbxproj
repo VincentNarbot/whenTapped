@@ -15,6 +15,7 @@
 		C7E17C721DF25EEB0030C7AC /* whenTapped+UISwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E17C711DF25EEB0030C7AC /* whenTapped+UISwitch.swift */; };
 		C7E17C741DF25F0E0030C7AC /* whenTapped+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E17C731DF25F0E0030C7AC /* whenTapped+UITextField.swift */; };
 		C7E17C761DF25F290030C7AC /* whenTapped+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E17C751DF25F290030C7AC /* whenTapped+UIImageView.swift */; };
+		F4C875121E9CFD5D0062529D /* whenTapped+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C875111E9CFD5D0062529D /* whenTapped+UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		C7E17C711DF25EEB0030C7AC /* whenTapped+UISwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "whenTapped+UISwitch.swift"; sourceTree = "<group>"; };
 		C7E17C731DF25F0E0030C7AC /* whenTapped+UITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "whenTapped+UITextField.swift"; sourceTree = "<group>"; };
 		C7E17C751DF25F290030C7AC /* whenTapped+UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "whenTapped+UIImageView.swift"; sourceTree = "<group>"; };
+		F4C875111E9CFD5D0062529D /* whenTapped+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "whenTapped+UIView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				C7E17C551DF21A5E0030C7AC /* Info.plist */,
 				C7E17C6B1DF238110030C7AC /* whenTapped.swift */,
 				C7E17C6D1DF25EA20030C7AC /* whenTapped+UIButton.swift */,
+				F4C875111E9CFD5D0062529D /* whenTapped+UIView.swift */,
 				C7E17C6F1DF25EC90030C7AC /* whenTapped+UILabel.swift */,
 				C7E17C711DF25EEB0030C7AC /* whenTapped+UISwitch.swift */,
 				C7E17C731DF25F0E0030C7AC /* whenTapped+UITextField.swift */,
@@ -217,6 +220,7 @@
 				C7E17C701DF25EC90030C7AC /* whenTapped+UILabel.swift in Sources */,
 				C7E17C6E1DF25EA20030C7AC /* whenTapped+UIButton.swift in Sources */,
 				C7E17C721DF25EEB0030C7AC /* whenTapped+UISwitch.swift in Sources */,
+				F4C875121E9CFD5D0062529D /* whenTapped+UIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
