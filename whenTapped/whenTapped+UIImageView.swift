@@ -13,7 +13,7 @@ extension UIImageView {
         static var whenTappedKey   = "whenTappedKey"
     }
     
-    public override func whenTapped(handler: (() -> Void)!) {
+    @objc public override func whenTapped(handler: (() -> Void)!) {
         let aBlockClassWrapper = ClosureWrapper(closure: handler)
         objc_setAssociatedObject(self, &AssociatedKeys.whenTappedKey, aBlockClassWrapper, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC);
         
@@ -22,7 +22,7 @@ extension UIImageView {
         self.addGestureRecognizer(tapGestureRecognizer)
     }
     
-    override func touchUpInside(){
+    @objc override func touchUpInside(){
         let actionBlockAnyObject = objc_getAssociatedObject(self, &AssociatedKeys.whenTappedKey) as? ClosureWrapper
         actionBlockAnyObject?.closure?()
         self.tag = 0

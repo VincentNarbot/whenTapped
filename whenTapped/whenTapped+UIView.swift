@@ -13,7 +13,7 @@ extension UIView {
         static var whenTappedKey   = "whenTappedKey"
     }
     
-    public func whenTapped(handler: (() -> Void)!) {
+    @objc public func whenTapped(handler: (() -> Void)!) {
         let aBlockClassWrapper = ClosureWrapper(closure: handler)
         objc_setAssociatedObject(self, &AssociatedKeys.whenTappedKey, aBlockClassWrapper, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC);
         
