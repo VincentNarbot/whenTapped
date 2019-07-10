@@ -17,7 +17,7 @@ extension UISwitch {
         let aBlockClassWrapper = ClosureWrapper(closure: handler)
         objc_setAssociatedObject(self, &AssociatedKeys.whenTappedKey, aBlockClassWrapper, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC);
         
-        self.addTarget(self, action: #selector(UISwitch.touchUpInside), for: UIControlEvents.valueChanged)
+        self.addTarget(self, action: #selector(UISwitch.touchUpInside), for: UIControl.Event.valueChanged)
     }
     
     override func touchUpInside(){

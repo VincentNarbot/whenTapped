@@ -22,7 +22,7 @@ extension UIView {
         self.addGestureRecognizer(tapGestureRecognizer)
     }
     
-    func touchUpInside(){
+    @objc func touchUpInside(){
         let actionBlockAnyObject = objc_getAssociatedObject(self, &AssociatedKeys.whenTappedKey) as? ClosureWrapper
         actionBlockAnyObject?.closure?()
         self.tag = 0
